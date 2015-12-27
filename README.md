@@ -8,7 +8,7 @@ Plugin](https://github.com/henrylawson/photish#deployment-engine-plugins) for
 
 To install it, simple include the Gem in your Gemfile:
 
-**Gemfile**
+**./Gemfile**
 
 ```Gemfile
 gem 'photish-plugin-sshdeploy'
@@ -16,6 +16,8 @@ gem 'photish-plugin-sshdeploy'
 
 And in your Photish config, ensure it is listed in your `plugins` Config File
 Option.
+
+**./config.yml**
 
 ```YAML
 plugins: ['photish/plugin/sshdeploy']
@@ -43,6 +45,11 @@ deploy:
 It also requires that you have configured your `~/.ssh/config` file with the
 login details of the host you wish to upload too. [See here for a simple
 guide](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/).
+
+## Example usage
+
+An example usage can be seen in the [Photish
+Montage](https://github.com/henrylawson/photish-montage) demo.
 
 ## License
 
